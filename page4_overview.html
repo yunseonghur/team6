@@ -1,15 +1,79 @@
 <html>
-<body>
-
-<h1>this is questionnaire part2</h1>
-<h1>anything for project</h1>
-<p>another line, yuni hur</p>
-
-<h1>anything for the project</h1>
-<h2>just another heading. Sherry Guo</h2>
-    <p> another line, another day.</p>
-
-
-
-</body>
+    <head>
+        <title>Trip Overview</title>
+        <meta charset="utf-8">
+        <style>
+            h1{
+                float: left;
+            }
+            #nav{
+                float: right;
+                margin-right: 10%;
+            }
+            #content{
+                padding-top: 10%;
+                margin: 0px auto;
+                
+            }
+            .column3{
+                text-align: right;
+            }
+            #content td {
+                padding: 20px;
+            }
+            .column1{
+                font-weight: bold;
+            }
+            #back{
+                float: left;
+                margin-left: 30%;
+            }
+            #results{
+                float: right;
+                margin-right: 40%;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1>U-GO</h1>
+        <table id="nav">
+            <tr>
+                <th>LOGIN</th><th>SIGN-UP</th><th>ABOUT</th>
+            </tr>
+        </table>
+        <table id="content">
+            <tr>
+                <td colspan="2" id="distance" class="column1">The distance of your trip is: <span>6.2 </span> (km)</td>
+                <td class="column3">TOGGLE UNIT</td>
+            </tr>
+            <tr>
+                <td class="column1">Age group: </td>
+                <td>18 years or older</td>
+                <td class="column3">EDIT</td>
+            </tr>
+            <tr>
+                <td class="column1">License Type: </td>
+                <td>CLASS-5</td>
+                <td class="column3">EDIT</td>
+            </tr>
+            <tr>
+                <td class="column1">Trip type: </td>
+                <td>Round-trip</td>
+                <td class="column3">EDIT</td>
+            </tr>
+            <tr>
+                <td class="column1">Leaving from: </td>
+                <td>4256 Castlewood Crescent, Burnaby, BC </td>
+                <td class="column3">EDIT</td>
+            </tr>
+            <tr>
+                <td class="column1">Destination: </td>
+                <td>4500 Still Creek Dr, Burnaby, BC</td>
+                <td class="column3">EDIT</td>
+            </tr>
+        </table>
+        <div id="back">BACK</div>
+        <div id="results">RESULTS</div>
+    </body>
 </html>
