@@ -1,7 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <title>Questionnaire Part 2</title> 
+        <meta charset="utf-8"/>
+        
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+            
+            #page-container {
+                width: 700px;
+            }
+            
+            #header {
+                background-color: #38b48b;
+                border-style: double;
+                border-width: 5px;
+                border-color: #ffffff;
+                margin-bottom: 10px;
+            }
+            
+            h1 {
+                text-align: center;
+                color: #000000;
+                font-family: "Open Sans"
+            }
+            
+            #body {
+                background-color: #cee4ae;
+                height: 300px;
+                border-style: double;
+                border-width: 5px;
+                border-color: #ffffff;
+                
+                
+            }
+            
+            iframe {
+                float: right;
+                clear: right;
+                height: 200px;
+                width: 300px;
+                margin: 15px;
+                border-style: solid;
+                border-width: 7px;
+                border-color: #ffffff;
+            }
+            
+            #body-left {
+                margin: 15px;
+            }
+            
+            
+        </style>
+        
     </head>
     <body>
-        <h1>this is questionnaire part1</h1>
+        <div id="page-container">
+        <div id="header">
+        <h1>Questionnaire Part 2: Route</h1>
+        </div>
+        
+        <div id="body">
+            <div id="body-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d83312.07655950486!2d-123.1411467!3d49.2668769!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1551813598139" allowfullscreen></iframe>
+        </div>
+            
+            <div id="body-left">
+                <h2>Part B</h2>
+                
+                <fieldset>
+                    <legend>Select Route Type:</legend>
+                    <input type="radio" id="c1" name="cc"/>
+                    <label for="c1">one-way</label>
+                    <input type="radio" id="c2" name="cc"/>
+                    <label for="c2">round-trip</label>
+                    
+                    <!-- probably need javascript listener to implement switching input pages when either of the radio buttons are clicked. -->
+                    
+                    <p>
+                    <label for="in1">depart: </label>
+                    <input type="text" id="in1" name="input1"/>
+                    </p>
+                    <p>
+                    <label for="in1">arrive: </label>
+                    <input type="text" id="in1" name="input1"/>
+                    </p>
+                    
+                    <input type="submit" value="save"/>
+
+    
+                </fieldset>  
+            </div>
+            
+            <footer> 
+                <p>footer text</p>
+            </footer>
+            
+        </div>
+    
+        </div>
     </body>
 </html>
