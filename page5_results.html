@@ -3,29 +3,63 @@
         <title>Results</title>
         <meta charset="utf-8">
         <style>
-            .recommendation{
-                grid-column: 1/2;
-                grid-row: 1/2;
+            body{
+                font-size: 18pt;
             }
-            .quote{
+            .container{
+                display: grid;
+                
+            }
+            .recommendation{
                 grid-column: 1/2;
                 grid-row: 2/3;
             }
+            .quote{
+                grid-column: 1/2;
+                grid-row: 3/4;
+            }
             .eco{
                 grid-column: 2/3;
-                grid-row: 1/3;
+                grid-row: 2/4;
+                font-size: 25pt;
+            }
+            #price {
+                font-size: 35pt;
+            }
+            #details {
+                font-size: 11pt;
+                text-decoration: underline;
+                margin-left: 50%
+            }
+            .center, .recommendation img{
+                margin-left: 20%;
             }
         </style>
     </head>
     <body>
-        <div class="recommendation">
-            Based on your information, we recommend:
-        </div>
-        <div class="quote">
-            Your estimated quote:
-        </div>
-        <div class="eco">
-            Carbon emission reduced:
+        <div class="container">
+            <div class="recommendation">
+                <p>Based on your information, we recommend:</p>
+    <!-- we will be using javaScript for the recommended company -->
+                <img src="modo.png" alt="modo">
+            </div>
+            <div class="quote">
+                <p>Your estimated quote:</p>
+                <span id="price" class="center">$ 9.67 </span><br>
+                <span class="center">for 13.2km</span>
+                <p class="center"><small>at a rate of 0.63 ¢ / minute</small></p>
+                <p id="details"><i>view company details</i></p>
+            </div>
+            <div class="eco">
+                <div>
+                    <p>Carbon emission reduced: </p>
+                    <img src="co2.png" alt="co2Icon">
+                </div>
+                <div>
+                     <p>Estimated savings: </p>
+                    <img src="saving.png" alt="dollarIcon">
+                </div>
+            </div>
         </div>
     </body>
 </html>
