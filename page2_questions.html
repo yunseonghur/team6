@@ -3,7 +3,7 @@
     
     <head>
         <title>Questionnaire Part 1</title> 
-        <meta charset="utf-8"/>
+        <meta charset="utf-8">
         <style>
             
        #body-left {
@@ -34,7 +34,7 @@
                 border-style: double;
                 border-width: 5px;
                 border-color: #ffffff;
-               
+            }
                 
         
         </style>
@@ -47,16 +47,12 @@
               <div id="header">
               <h1>Questionnaire Part 1: Personal Information</h1>
             </div>
-        </div>
-            <div id="body">
-            <div id="body-right">
-                </div>
-        </div>
+        
+            
+        
         
                 <div id="body-left">
               <h2>Part A</h2>
-        </div>
-                
         <fieldset>
                   <legend>Please select your age group</legend>
                   <label><input type="checkbox" id="question1" name="I am 18 years old"/>I am 18 years old?
@@ -64,10 +60,7 @@
         
                  <label><input type="checkbox" id="question2" name="question"/>I am undere 18?
                  </label><br/>
-                
-        </fieldset>
-        
-        <fieldset>
+                <br>
             <label>Type of liscence</label>
         <select size="1" name="liscence" id="liscence">
           <option value="Class - 5" selected="selected">CLASS - 5</option>
@@ -78,17 +71,14 @@
           <option value="N/A">N/A</option>
         
         </select>
-        </fieldset>
-        
-        <fieldset>
-                 <label>How many years you have driven? </label><input min="0" max="80" type="number" id="number" name="number" value="0"/>
-         </fieldset>
-         
-         <fieldset>
+            <br><br>
+                 <label>How many years you have driven? </label><input min="0" max="80" type="number" id="number" name="number" value="0">
+            <br><br>
          <label>Any accident history? </label> <input type="text" id="history" name="history" placeholder="History" autofocus="autofocus"
-          pattern="[A-Za-z]{2,20}" required="required"/> 
+          pattern="[A-Za-z]{2,20}" required="required"> 
          </fieldset>
-            
+                </div>
+            </div>
           </body>
           </html>
          
