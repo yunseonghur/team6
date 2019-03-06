@@ -1,7 +1,95 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+    
     <head>
+        <title>Questionnaire Part 1</title> 
+        <meta charset="utf-8"/>
+        <style>
+            
+       #body-left {
+                margin: 15px;
+            }
+            
+        #header {
+                background-color: #38b48b;
+                border-style: double;
+                border-width: 5px;
+                border-color: #ffffff;
+                margin-bottom: 10px;
+            }
+        
+         h1 {
+                text-align: center;
+                color: #000000;
+                font-family: "Open Sans"
+            }
+        
+        #page-container {
+                width: 700px;
+            }
+            
+            #body {
+                background-color: #cee4ae;
+                height: 300px;
+                border-style: double;
+                border-width: 5px;
+                border-color: #ffffff;
+               
+                
+        
+        </style>
     </head>
+        
     <body>
-        <h1>this is login page</h1>
-    </body>
-</html>
+        
+         
+        <div id="page-container">
+              <div id="header">
+              <h1>Questionnaire Part 1: Personal Information</h1>
+            </div>
+        </div>
+            <div id="body">
+            <div id="body-right">
+                </div>
+        </div>
+        
+                <div id="body-left">
+              <h2>Part A</h2>
+        </div>
+                
+        <fieldset>
+                  <legend>Please select your age group</legend>
+                  <label><input type="checkbox" id="question1" name="I am 18 years old"/>I am 18 years old?
+                  </label><br/>
+        
+                 <label><input type="checkbox" id="question2" name="question"/>I am undere 18?
+                 </label><br/>
+                
+        </fieldset>
+        
+        <fieldset>
+            <label>Type of liscence</label>
+        <select size="1" name="liscence" id="liscence">
+          <option value="Class - 5" selected="selected">CLASS - 5</option>
+          <option value="N liscence">N liscence</option>
+          <option value="L liscence">L liscence</option>
+          <option value="Foreign liscence">Foreign liscence</option>
+          <option value="Wheelchair accessable">Wheelchair accessable</option>
+          <option value="N/A">N/A</option>
+        
+        </select>
+        </fieldset>
+        
+        <fieldset>
+                 <label>How many years you have driven? </label><input min="0" max="80" type="number" id="number" name="number" value="0"/>
+         </fieldset>
+         
+         <fieldset>
+         <label>Any accident history? </label> <input type="text" id="history" name="history" placeholder="History" autofocus="autofocus"
+          pattern="[A-Za-z]{2,20}" required="required"/> 
+         </fieldset>
+            
+          </body>
+          </html>
+         
+          
