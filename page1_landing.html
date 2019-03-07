@@ -8,7 +8,7 @@
                 margin: 0;
             }
             #banner{
-                height: 15%
+                height: 15%;
             }
             h1{
                 float: left;
@@ -32,13 +32,33 @@
             }
             #buttonToLogin{
                 float: right; 
-                padding-right: 10%;
+                padding-right: 23%;
                 padding-top: 35px;
+            }
+            #buttonToLogin:hover{
+                color: blue;
+                text-decoration: underline;
             }
             #buttonToStart{
                 text-align: center;
-                padding-top: 85px;
+                margin-top: 95px;
                 font-size: 22pt;
+                background-color: black;
+                color: white;
+            }
+            #buttonToStart:hover{
+                background-color: forestgreen;
+                color:black;
+            }
+            
+            #textBox{
+                box-shadow: 5px 5px 5px 5px #4b4f4d;
+                margin: 0px auto;
+                width: 600px;
+                height:450px;
+                background-color:white;
+                opacity: 0.8;
+                border-radius: 25px;
             }
             
         </style>
@@ -54,6 +74,7 @@
         </div>
         <hr>
         <div class="background">
+            <div id="textBox">
             <div id="para">
                 <p>Confused by all the car-share options?</p><br>
                 <p>Look no further!</p><br>
@@ -62,6 +83,7 @@
             </div>
             <div id="buttonToLogin">>Show login page</div>
             <div id="buttonToStart">GET START</div>
+            </div>
         </div>
 
     </body>
