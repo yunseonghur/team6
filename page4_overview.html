@@ -32,16 +32,27 @@
             .column1{
                 font-weight: bold;
             }
-            #back{
+            #btn-left {
                 float: left;
-                margin-left: 500px;
             }
-            #results{
+            
+            #btn-right {
                 float: right;
-                margin-right: 500px;
             }
-            #back, #results{
-                margin-top: 45px;
+            .button {
+                background-color: #38b48b; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            #bottom-row {
+                padding: 20px 500px;
             }
             
         </style>
@@ -84,7 +95,9 @@
                 <td class="column3">EDIT</td>
             </tr>
         </table>
-        <div id="back">BACK</div>
-        <div id="results">RESULTS</div>
+        <div id="bottom-row">
+            <button id="btn-left" class="button">back</button>
+            <button id="btn-right" class="button">next</button>
+        </div>
     </body>
 </html>
