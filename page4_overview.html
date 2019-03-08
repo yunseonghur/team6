@@ -8,15 +8,23 @@
             }
             #nav{
                 float: right;
-                margin-right: 10%;
+                margin-right: 5%;
+            }
+            th{
+                padding: 25px 35px;
             }
             #content{
-                padding-top: 10%;
+                background-color: #cee4ae;
                 margin: 0px auto;
-                
+                clear: both;
+                padding-bottom: 35px;
             }
             .column3{
                 text-align: right;
+            }
+            .column3:hover{
+                color: blue;
+                text-decoration: underline;
             }
             #content td {
                 padding: 20px;
@@ -24,21 +32,35 @@
             .column1{
                 font-weight: bold;
             }
-            #back{
+            #btn-left {
                 float: left;
-                margin-left: 30%;
             }
-            #results{
+            
+            #btn-right {
                 float: right;
-                margin-right: 40%;
+            }
+            .button {
+                background-color: #38b48b; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            #bottom-row {
+                padding: 20px 500px;
             }
             
         </style>
     </head>
     <body>
-        <h1>U-GO</h1>
-        <table id="nav">
-            <tr>
+         <h1>U-GO</h1>
+         <table id="nav">
+               <tr>                        
                 <th>LOGIN</th><th>SIGN-UP</th><th>ABOUT</th>
             </tr>
         </table>
@@ -73,7 +95,9 @@
                 <td class="column3">EDIT</td>
             </tr>
         </table>
-        <div id="back">BACK</div>
-        <div id="results">RESULTS</div>
+        <div id="bottom-row">
+            <button id="btn-left" class="button">back</button>
+            <button id="btn-right" class="button">next</button>
+        </div>
     </body>
 </html>
