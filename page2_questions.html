@@ -54,13 +54,24 @@
                 <div id="body-left">
               <h2>Part A</h2>
         <fieldset>
-                  <legend>Please select your age group</legend>
-                  <label><input type="checkbox" id="question1" name="I am 18 years old"/>I am 18 years old?
-                  </label><br/>
+                  <legend>Select your age group:</legend>
+                  <input type="radio" id="c1" name="cc"/>
+            <label>I am 18 years old?</label>
+            
         
-                 <label><input type="checkbox" id="question2" name="question"/>I am undere 18?
-                 </label><br/>
+                 <input type="radio" id="c2" name="cc"/>
+            <label>I am under 18?</label><br/>
                 <br>
+            
+            
+            
+            
+            
+            
+           
+                    
+            
+            
             <label>Type of liscence</label>
         <select size="1" name="liscence" id="liscence">
           <option value="Class - 5" selected="selected">CLASS - 5</option>
@@ -74,8 +85,12 @@
             <br><br>
                  <label>How many years you have driven? </label><input min="0" max="80" type="number" id="number" name="number" value="0">
             <br><br>
-         <label>Any accident history? </label> <input type="text" id="history" name="history" placeholder="History" autofocus="autofocus"
-          pattern="[A-Za-z]{2,20}" required="required"> 
+         <label>Any accident history? </label>
+            <select size="1" name="history" id="liscence">
+            <option value="YES">YES</option>
+                <option value="NO">NO</option> 
+            
+            </select>
          </fieldset>
                 </div>
             </div>
