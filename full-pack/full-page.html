@@ -1,0 +1,310 @@
+<html>
+    <head>
+        <title>Results</title>
+        <meta charset="utf-8">
+        <style>
+        
+            body {
+                background-image: url(images/ugo-bg.png);
+                background-repeat: no-repeat;
+                background-size: 1440px;
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            
+            #header {
+                width: 100%;
+                height: 100px;
+                margin: 0px;
+                padding: 0px;
+            }
+            
+            h1 {
+                float: left;
+                font-family: 'Monoton';
+                font-size: 45pt;
+                padding: 0px 10px;
+                margin: 0px;
+            }
+            
+            .test {
+                border-style: solid;
+                border-width: 1px;
+                margin-top: 10px;
+                
+            }
+            
+            #rec-main-box {
+                height: 600px;
+                background-color: #ffffff;
+                margin-top: 0px;
+                margin-bottom: 40px;
+                overflow: scroll;
+            }
+            
+            #inner-container {
+                text-align: center;
+
+            }
+            
+            /* START components in the white box */
+            
+            p {
+                line-height: 0.6em;
+            }
+            
+            #rec-company {
+                
+            }
+            
+            #rec-price {
+                
+            }
+            
+            #carbon-emission {
+                
+            }
+            
+            #est-saving {
+                
+            }
+            
+            /* END components in white box */
+            
+            
+            #footer {
+                text-align: left;
+                background-color: #ffffff;
+                color: grey;
+                position:absolute;
+                bottom: 0;
+                width: 100%;
+                margin: 0px;
+                padding: 3px;
+                padding-left: 10px;
+                height: 30px;
+                font-size: 10px;
+                letter-spacing: 0.2em;
+            }
+            
+            footer p {
+                padding: 0px;
+                margin: 0px;
+            }
+            
+/* PAGE 4 CSS */
+            
+            th {
+                padding: 25px 35px;
+            }
+            
+            #content{
+                background-color: #cee4ae;
+                margin: 0px auto;
+                clear: both;
+                padding-bottom: 35px;
+            }
+            .column3{
+                text-align: right;
+            }
+            
+            .column3:hover{
+                color: blue;
+                text-decoration: underline;
+            }
+            
+            #content td {
+                padding: 20px;
+            }
+            
+            .column1{
+                font-weight: bold;
+            }
+            
+/* PAGE 3 CSS */
+                
+            #body {
+                background-color: #ffffff;
+                height: 300px;
+                border-style: solid;
+                border-width: 1px;
+                border-color: #00ffff;
+                width: 100%;
+                
+            }
+            
+            iframe {
+                float: right;
+                clear: right;
+                height: 200px;
+                width: 300px;
+                margin: 15px;
+                border-style: solid;
+                border-width: 7px;
+                border-color: #ffffff;
+            }
+
+            #body-left {
+                margin: 15px;
+            }
+            
+/* PAGE 2 CSS */
+            
+            /* none needed at the moment*/
+
+            
+    </style>
+    </head>
+    
+    <body>
+        <div id="header">
+            <h1>u-go</h1>
+            </div>
+        
+        <!-- this is the center white canvas-->
+         <div id="rec-main-box">
+    
+             <div id="page-container">
+        
+<!-- QUESTIONS PAGE (2) -->
+                 
+                <div id="body-left">
+              <h2>Part A</h2>
+        <fieldset>
+                  <legend>Select your age group:</legend>
+                  <input type="radio" id="c1" name="cc"/>
+            <label>I am 18 years old?</label>
+            
+        
+                 <input type="radio" id="c2" name="cc"/>
+            <label>I am under 18?</label><br/>
+                <br>
+            
+            <label>Type of liscence</label>
+        <select size="1" name="liscence" id="liscence">
+          <option value="Class - 5" selected="selected">CLASS - 5</option>
+          <option value="N liscence">N liscence</option>
+          <option value="L liscence">L liscence</option>
+          <option value="Foreign liscence">Foreign liscence</option>
+          <option value="Wheelchair accessable">Wheelchair accessable</option>
+          <option value="N/A">N/A</option>
+        
+        </select>
+            <br><br>
+                 <label>How many years you have driven? </label><input min="0" max="80" type="number" id="number" name="number" value="0">
+            <br><br>
+         <label>Any accident history? </label>
+            <select size="1" name="history" id="liscence">
+            <option value="YES">YES</option>
+                <option value="NO">NO</option> 
+            
+            </select>
+         </fieldset>
+                </div>
+         
+<!-- MAPS PAGE (3) -->
+                 
+        <div id="body">
+            <div id="body-right">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d83312.07655950486!2d-123.1411467!3d49.2668769!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1551813598139" allowfullscreen></iframe>
+        </div>
+            
+            <div id="body-left">
+                <h2>Part B</h2>
+                
+                <fieldset>
+                    <legend>Select Route Type:</legend>
+                    <input type="radio" id="c1" name="cc"/>
+                    <label for="c1">one-way</label>
+                    <input type="radio" id="c2" name="cc"/>
+                    <label for="c2">round-trip</label>
+                    
+                    <!-- probably need javascript listener to implement switching input pages when either of the radio buttons are clicked. -->
+                    
+                    <p>
+                    <label for="in1">depart: </label>
+                    <input type="text" id="in1" name="input1"/>
+                    </p>
+                    <p>
+                    <label for="in1">arrive: </label>
+                    <input type="text" id="in1" name="input1"/>
+                    </p>
+                    
+                    <input type="submit" value="save"/>
+
+    
+                </fieldset>  
+            </div>
+                 </div>
+            </div>
+             
+<!-- REVIEW PAGE (4) -->
+             <table id="content">
+            <tr>
+                <td colspan="2" id="distance" class="column1">The distance of your trip is: <span>13.2 </span> (km)</td>
+                <td class="column3">TOGGLE UNIT</td>
+            </tr>
+            <tr>
+                <td class="column1">Age group: </td>
+                <td>18 years or older</td>
+                <td class="column3">EDIT</td>
+            </tr>
+            <tr>
+                <td class="column1">License Type: </td>
+                <td>CLASS-5</td>
+                <td class="column3">EDIT</td>
+            </tr>
+            <tr>
+                <td class="column1">Trip type: </td>
+                <td>Round-trip</td>
+                <td class="column3">EDIT</td>
+            </tr>
+            <tr>
+                <td class="column1">Leaving from: </td>
+                <td>4256 Castlewood Crescent, Burnaby, BC </td>
+                <td class="column3">EDIT</td>
+            </tr>
+            <tr>
+                <td class="column1">Destination: </td>
+                <td>4500 Still Creek Dr, Burnaby, BC</td>
+                <td class="column3">EDIT</td>
+            </tr>
+        </table>
+             
+<!-- LAST PAGE (5)-->
+             <div id="inner-container">
+            <div id="rec-company" class="test">
+                <p>Based on your information, we recommend:</p>
+                <!-- we will be using javaScript for the recommended company -->
+                <img src="https://dummyimage.com/100x100/000/fff"></div>
+            <div id="rec-price" class="test">
+            <p>Your estimated Quote:</p>
+                <p>$9.76</p>
+                <p>for 13.2km</p>
+                <p>at a rate of:</p>
+                <p>63 cents / minute</p>
+            </div>
+            
+            <div id="carbon-emission" class="test">
+            <p>Carbon emission reduced:</p>
+                <P>### metric tonnes</P>
+                <img src="https://dummyimage.com/100x100/000/fff">
+            </div>
+            
+            <div id="est-saving" class="test">
+                <p>Estimated savings: </p>
+                <p>$$$ saved</p>
+                <img src="https://dummyimage.com/100x100/000/fff">
+            </div>
+                 
+            </div>
+        </div>
+        <!-- END OF center white canvas-->
+        
+        <div id="footer"> 
+                <p>2019 U-GO INC. © Copyright Team 6. All right reserved.</p>
+            </div>
+       
+    </body>
+</html>
