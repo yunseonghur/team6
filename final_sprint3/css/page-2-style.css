@@ -17,13 +17,6 @@
                 color: white;
                 
             }
-            #nav{
-                float: right;
-                margin-right: 5%;
-            }
-            th{
-                padding: 25px 35px;
-            }
             
             #page-space {
                 background-color: #ffffff;
@@ -42,7 +35,7 @@
                 height: 100px;
             }
 
-            .button{ 
+            .button { 
                 padding: 20px;
                 background-color: #38b48b;
                 margin: 14px 5px;
@@ -56,7 +49,7 @@
                 text-decoration: none;
             }
 
-            .button:hover{
+            .button:hover {
                 color: white;
                 background-color: turquoise;
             }
@@ -65,5 +58,11 @@
                 color: white;
                 background-color: turquoise;
                 text-decoration: underline;
+            }
+
+            #result-container {
+                margin-top: 40px;
+                padding: 20px;
+                border-style: double;
             }
             
