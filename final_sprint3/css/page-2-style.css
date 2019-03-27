@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton');
             
             body{
-                background-image: url(/Users/sherryguo/Desktop/final_sprint3/bg.jpeg);
+                background-image: url(bg.jpeg);
             }
             *{
                 margin: 0;

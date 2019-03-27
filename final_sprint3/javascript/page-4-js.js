@@ -1,8 +1,7 @@
 
-document.getElementById("genResult").addEventListener("click",
-function() {
-    ShowList("users");
-});
+window.onload=function() {
+    ShowList("A001");
+};
 
 function ShowList(users) {
     var dbRef = firebase.database().ref("users/"+users);
@@ -18,8 +17,8 @@ function DisplayList(list){
     console.log(list);
     for (x in list) {
         var para = document .createElement("p");
-        document.body.appendChild(para);
-        var node = document.createTextNode("Your result it " + x );
+        document.getElementById('main-container').appendChild(para);
+        var node = document.createTextNode(x+" " + list[x] );
         para.appendChild(node);
     }
 }
