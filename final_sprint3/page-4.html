@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Questionaire Page</title>
+
+<link rel="stylesheet" type="text/css" href="css/page-4-style.css">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCWP7dexZlcUbIXkojw66QEXJUUGQkC9fo",
+    authDomain: "u-go-transportation-app.firebaseapp.com",
+    databaseURL: "https://u-go-transportation-app.firebaseio.com",
+    projectId: "u-go-transportation-app",
+    storageBucket: "u-go-transportation-app.appspot.com",
+    messagingSenderId: "629277851753"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<body>
+
+    <div id="banner">
+        <h1>U-GO</h1>
+        <table id="nav">
+              <tr>                        
+                  <th>LOGIN</th><th>SIGN-UP</th><th>ABOUT</th>
+           </tr>
+       </table>
+       </div>
+       <div class="background">
+           <div id="rec-main-box" class ="grid-item">
+           
+           <div id="rec-company" class ="grid-item">
+               <p>Based on your information, we recommend:</p>
+               <!-- we will be using javaScript for the recommended company -->
+               <img src="https://dummyimage.com/100x100/000/fff"></div>
+           <div id="rec-price" class ="grid-item">
+           <p>Your estimated Quote:</p>
+               <p>$9.76</p>
+               <p>for 13.2km</p>
+               <p>at a rate of:</p>
+               <p>63 cents / minute</p>
+           </div>
+           
+           <div id="carbon-emission" class ="grid-item">
+           <p>Carbon emission reduced:</p>
+               <P>### metric tonnes</P>
+               <img src="https://dummyimage.com/100x100/000/fff">
+           </div>
+           
+           <div id="est-saving" class ="grid-item">
+               <p>Estimated savings: </p>
+               <p>$$$ saved</p>
+               <img src="https://dummyimage.com/100x100/000/fff">
+           </div>
+           </div>
+       </div>
+       
+           <div id="footer">
+               <p>2019 U-GO INC. &copy; Copyright Team 6. All right reserved.</p>
+           </div>
+        <script src="javascript/page-4-js.js"></script>
+    </body>
+</head>
