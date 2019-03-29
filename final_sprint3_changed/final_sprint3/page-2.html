@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Questionaire Page</title>
+
+<link rel="stylesheet" type="text/css" href="css/page-2-style.css">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCWP7dexZlcUbIXkojw66QEXJUUGQkC9fo",
+    authDomain: "u-go-transportation-app.firebaseapp.com",
+    databaseURL: "https://u-go-transportation-app.firebaseio.com",
+    projectId: "u-go-transportation-app",
+    storageBucket: "u-go-transportation-app.appspot.com",
+    messagingSenderId: "629277851753"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<body>
+    <div id="banner">
+            <h1>U-GO</h1>
+            
+            <div id="nav-button-container">
+              <button id="btnLogout" class="button">Logout</button>
+            </div>
+           
+            <div id="page-space">
+
+              <div id="main-container">
+                <br>
+                <p>Please tell us where you would like to depart from?:</p>
+                <button id="btnBCIT" class="button">BCIT</button>
+                <button id="btnYVR" class="button">YVR</button>
+                
+                <p>Where are you planning to go?:</p>
+                <button id="btnDowntown" class="button">Downtown</button>
+                <button id="btnMetrotown" class="button">Metrotown</button>
+
+                <p>How long are you planning to stay?:</p>
+                <button id="thirtymin" class="button">30 min</button>
+                <button id="sixtymin" class="button">60 min</button>
+
+                <div id="result-container">
+                <p></p>
+                <p>Click here to generate results:</p>
+                <button id="genResult" class="button"><a href="page-4.html">Take me to the results!</a></button>
+
+                </div>
+              </div>
+                 </div>
+            </div>
+       
+       </body>
+
+
+        <script src="javascript/page-2-js.js"></script>
+
+    </body>
+</head>

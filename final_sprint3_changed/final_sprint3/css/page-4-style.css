@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+            
+            body{
+                background-image: url(/Users/sherryguo/Desktop/final_sprint3/bg.jpeg);
+            }
+            *{
+                margin: 0;
+            }
+            #banner{
+                height: 100px;
+            }
+
+            h1{
+                float: left;
+                font-family: 'Monoton', cursive;
+                font-size: 45pt;
+                padding: 0px 10px;
+                color: white;
+                
+            }
+            #page-space {
+                background-color: #ffffff;
+                height: 550px;
+                width: 100%; 
+            }
+
+            #main-container {
+                text-align: center;
+                font-family: 'Roboto';
+                margin: 0 auto;
+                
+            }
+
+            #res-text-1 {
+                margin-top: 40px;
+                font-size: 40pt;
+                letter-spacing: 0.05em;
+                font-weight: 600;
+            }
+
+            #result-container {
+                margin: 20px;
+                font-size: 18px;
+            }
+
+            #res-text-2 {
+                margin-top: 20px;
+                font-size: 25pt;
+                font-weight: 400;
+            }
+
+            #result-container-2 {
+                margin: 20px;
+                font-size: 18px;
+            }
+
+            #button-container {
+                padding-top: 30px;
+                text-align: center;
+                height: 100px;
+            }
+
+            .button { 
+                padding: 20px;
+                background-color: #38b48b;
+                margin: 14px 5px;
+                cursor: pointer;
+                font-size: 17px;
+                display: inline-block;
+            }
+
+            .button a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .button:hover {
+                color: white;
+                background-color: turquoise;
+            }
+
+            .button:hover a{
+                color: white;
+                background-color: turquoise;
+                text-decoration: underline;
+            }
+            /* END components in white box */
+            
+            
+            #footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                letter-spacing: 0.2em;
+                color: dimgray;
+                background-color: white;
+                font-size: 10px;
+                padding: 8px;
+            }

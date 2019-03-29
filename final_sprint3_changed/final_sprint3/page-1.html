@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Questionaire Page</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="css/page-1-style.css">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCWP7dexZlcUbIXkojw66QEXJUUGQkC9fo",
+    authDomain: "u-go-transportation-app.firebaseapp.com",
+    databaseURL: "https://u-go-transportation-app.firebaseio.com",
+    projectId: "u-go-transportation-app",
+    storageBucket: "u-go-transportation-app.appspot.com",
+    messagingSenderId: "629277851753"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<body>
+
+        <div id="banner">
+                <h1>U-GO</h1>
+        </div>
+               <div class="background">
+                   <div id="textBox">
+                   <div id="para">
+                       <p>Confused by all the car-share options?</p><br>
+                       <p>Look no further!</p><br>
+                       <p>Try our handy tool</p>
+                       <p>that calculates and compares rates between carshare companies</p>
+                   </div>
+                   <div id='button-container'>
+                   <div class="button"><a href='auth.html'>Sign-up to begin</a></div>
+                   </div>
+                   </div>
+               </div>
+
+        <script src="javascript/page-1-js.js"></script>
+    </body>
+</head>
