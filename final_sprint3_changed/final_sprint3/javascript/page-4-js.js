@@ -33,11 +33,14 @@ function ShowList() {
 
 function DisplayList(list){
     console.log(list);
+    
+// the results for Modo
+    
     console.log(list["homeLocationModo"]);
     console.log(list["time"]);
 
-    var rateDistance = 0.3;
-    var rateTime = 0.4;
+    var rateDistance = 0.3; // 30 cent/km
+    var rateTimeModo = 0.15; // 15 cent/min
 
     var time = list["time"];
 
@@ -57,18 +60,46 @@ function DisplayList(list){
     var dist = Math.sqrt(xValue+yValue);
     console.log(dist);
 
-    var cost = dist*rateDistance + time*rateTime;
-    console.log(cost);
-    var trimCost = cost.toFixed(2);
-    console.log("$"+trimCost);
-
+    var costModo = dist*rateDistance + time*rateTimeModo;
+    console.log(costModo);
+    var trimCostModo = costModo.toFixed(2);
+    console.log("$"+trimCostModo);
     
-
-        var cost1=100;
-
         var para = document .createElement("p");
         document.getElementById('result-container').appendChild(para);
-        var node = document.createTextNode("Cost for modo is $" + trimCost);
+        var node = document.createTextNode("Cost for Modo is $" + trimCostModo);
+        para.appendChild(node);
+
+  
+// the results for Evo
+    
+    console.log(list["homeLocationEvo"]);
+    console.log(list["time"]);
+
+    var rateTimeEvo = 0.41; // 15 cent/min
+
+    var locationHomeEvo = list["homeLocationEvo"];
+    x1 = locationHomeEvo[0];
+    y1 = locationHomeEvo[1];
+    console.log(x1);
+    console.log(y1);
+    var locationArriveEvo = list["arriveLocationEvo"];
+    x2 = locationArriveEvo[0];
+    y2 = locationArriveEvo[1];
+    console.log(x2);
+    console.log(y2);
+    console.log(dist);
+
+    var costEvo =time*rateTimeEvo;
+    console.log(costEvo);
+    var trimCostEvo = costEvo.toFixed(2);
+    console.log("$"+trimCostEvo);
+    
+    
+
+        var para = document .createElement("p");
+        document.getElementById('result-container-2').appendChild(para);
+        var node = document.createTextNode("Cost for Evo is $" + trimCostEvo);
         para.appendChild(node);
     
 }
