@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Questionaire Page</title>
+
+<link rel="stylesheet" type="text/css" href="css/page-2-style.css">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCWP7dexZlcUbIXkojw66QEXJUUGQkC9fo",
+    authDomain: "u-go-transportation-app.firebaseapp.com",
+    databaseURL: "https://u-go-transportation-app.firebaseio.com",
+    projectId: "u-go-transportation-app",
+    storageBucket: "u-go-transportation-app.appspot.com",
+    messagingSenderId: "629277851753"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<body>
+    <div id="banner">
+            <h1>U-GO</h1>
+            
+            <div id="nav-button-container">
+              <button id="btnLogout" class="button">Logout</button>
+            </div>
+          </div>
+           
+            <div id="page-space">
+
+            <!-- main container -->
+              <div id="main-container">
+
+                <div id="container-left">
+                <p>Please tell us where you would like to depart from?:</p>
+                <div id="myDIV">
+                <button id="btnBCIT" class="button active">BCIT</button><br>
+                <button id="btnYVR" class="button">YVR</button>
+                </div>
+                </div>
+
+                <div id="container-mid"><img id="arrow" src='arrow.png' alt="arrow"></div>
+                
+                <div id="container-right">
+                <p>Where are you planning to go?:</p>
+                <div id="myDIV2">
+                <button id="btnDowntown" class="button active2">Downtown</button><br>
+                <button id="btnMetrotown" class="button">Metrotown</button>
+                </div>
+              </div>
+
+              </div>
+               <!-- main container ends -->
+                <div id="container-bottom">
+                <p>How long are you planning to stay?:</p>
+                <div id="myDIV3">
+                <button id="thirtymin" class="button active3">30 min</button>
+                <button id="sixtymin" class="button">60 min</button>
+                </div>
+              </div>
+                
+
+                <div id="result-container">
+                <p></p>
+                <p>Click here to generate results:</p>
+                <button id="genResult" class="button"><a href="page-4.html">Take me to the results!</a></button>
+                </div>
+
+              
+            
+              
+
+                 </div>
+            </div>
+       
+       </body>
+
+
+        <script src="javascript/page-2-js.js"></script>
+
+    </body>
+</head>
