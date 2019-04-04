@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-            
+             #bg{
+                background-image: url(/Users/sjind/Desktop/app/team6/final_sprint4/picture.jpeg);
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
             
             *{
                 margin: 0;
@@ -21,6 +28,8 @@
                 background-color: #ffffff;
                 height: 550px;
                 width: 100%; 
+                 opacity: 0.9;
+                box-shadow: 3px 3px 15px rgb(0,0,0,0.4);
             }
 
             #main-container {
@@ -55,7 +64,7 @@
 
             #button-container {
                 padding-top: 30px;
-                text-align: center;
+                text-align: right;
                 height: 100px;
             }
 
@@ -83,6 +92,10 @@
                 background-color: turquoise;
                 text-decoration: underline;
             }
+          #btnLogout {
+                float: right;
+            }
+            
             /* END components in white box */
             
             
