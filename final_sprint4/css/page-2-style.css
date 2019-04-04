@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Monoton');
-            
-            body {
-                background-image: url(/Users/sherryguo/Desktop/final_sprint3/bg.jpg);
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+            #bg{
+                background-image: url(/Users/yuni/Desktop/team6/final_sprint4/bg.jpg);
+                height: 100vh;
                 background-position: center;
-                
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
             }
-            
+            body {
+                font-family: 'Dosis', sans-serif;
+                font-size: 15pt;
+            }
             * {
                 margin: 0;
             }
