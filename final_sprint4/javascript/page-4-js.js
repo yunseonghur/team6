@@ -33,15 +33,16 @@ function ShowList() {
 
 function DisplayList(list){
     console.log(list);
+    
+// the results for Modo
+    
     console.log(list["homeLocationModo"]);
     console.log(list["time"]);
 
-    var rateDistance = 0.3;
-    var perMin = 0.15;
-    var perHour = 9;
+    var rateDistance = 0.3; // 30 cent/km
+    var rateTimeModo = 0.15; // 15 cent/min
 
-    var timeMin = list["time"];
-    var timeHour = list["time"]/60
+    var time = list["time"];
 
     var locationHomeModo = list["homeLocationModo"];
     var x1 = locationHomeModo[0];
@@ -54,32 +55,62 @@ function DisplayList(list){
     console.log(x2);
     console.log(y2);
 
-
     var xValue = Math.pow((x2-x1), 2);
     var yValue = Math.pow((y2-y1), 2);
     var dist = Math.sqrt(xValue+yValue);
     console.log(dist);
 
-    var costPerMin = dist*rateDistance + timeMin*perMin;
-    console.log(costPerMin);
-    var trimCostPerMin = costPerMin.toFixed(2);
-    console.log("$"+trimCostPerMin);
+    var costModo = dist*rateDistance + time*rateTimeModo;
+    console.log(costModo);
+    var trimCostModo = costModo.toFixed(2);
+    console.log("$"+trimCostModo);
+    
+    var costModo = dist*rateDistance + time*rateTimeModo;
+    console.log(costModo);
+    var trimCostModo = costModo.toFixed(2);
+    console.log("$"+trimCostModo);
+    
+        var paraModo = document .createElement("p");
+        document.getElementById('result-container').appendChild(paraModo);
+        var nodeDisModo = document.createTextNode("Distance: " + dist.toFixed(2)+" Km |");
+        var nodeModo = document.createTextNode("Price: $" + trimCostModo);
+        paraModo.appendChild(nodeDisModo);
+        paraModo.appendChild(nodeModo);
 
-    var costPerHour = dist*rateDistance + timeHour*perHour;
-    console.log(costPerHour);
-    var trimCostPerHour = costPerHour.toFixed(2);
-    console.log("$"+trimCostPerHour);
+
+// the results for Evo
+    
+    console.log(list["homeLocationEvo"]);
+    console.log(list["time"]);
+
+    var rateTimeEvo = 0.41; // 15 cent/min
+
+    var locationHomeEvo = list["homeLocationEvo"];
+    x1 = locationHomeEvo[0];
+    y1 = locationHomeEvo[1];
+    console.log(x1);
+    console.log(y1);
+    var locationArriveEvo = list["arriveLocationEvo"];
+    x2 = locationArriveEvo[0];
+    y2 = locationArriveEvo[1];
+    console.log(x2);
+    console.log(y2);
+    console.log(dist);
+
+    var costEvo =time*rateTimeEvo;
+    console.log(costEvo);
+    var trimCostEvo = costEvo.toFixed(2);
+    console.log("$"+trimCostEvo);
+    
     
 
-        var cost1=100;
-
-        var para = document .createElement("p");
-        document.getElementById('result-container').appendChild(para);
-        var node = document.createTextNode("Cost (minute rate, hour rate) for modo is $" + trimCostPerMin
-                                                + ", $" +  trimCostPerHour);
-        para.appendChild(node);
-        var node2 = document.createTextNode("Note: Modo does not calculate based on minutes.");
-        para.appendChild(node2);
+        var paraEvo = document .createElement("p");
+        document.getElementById('result-container-2').appendChild(paraEvo);
+         var nodeDisEvo = document.createTextNode("All mileage is included with Evo :D |");
+        var nodeEvo = document.createTextNode("Price: $" + trimCostEvo);
+            var nodeModo = document.createTextNode("Price: $" + trimCostModo);
+        paraEvo.appendChild(nodeDisEvo);
+        paraEvo.appendChild(nodeEvo);
     
 }
 

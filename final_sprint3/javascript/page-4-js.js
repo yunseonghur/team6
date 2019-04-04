@@ -1,6 +1,6 @@
 
 window.onload=function() {
-    ShowList("A001");
+    ShowList("wWFmoaZNr3MmZVEGt627ItDLKqr2");
 };
 
 function ShowList(users) {
@@ -16,9 +16,15 @@ function ShowList(users) {
 function DisplayList(list){
     console.log(list);
     for (x in list) {
-        var para = document .createElement("p");
-        document.getElementById('main-container').appendChild(para);
-        var node = document.createTextNode(x+" " + list[x] );
+        var para = document.createElement("p");
+        document.getElementById('resultContainer').appendChild(para);
+        var node = document.createTextNode(x+""+list[x]);
         para.appendChild(node);
     }
 }
+
+
+
+
+
+

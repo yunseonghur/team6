@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
             
             body {
-                background-image: url(/Users/sherryguo/Desktop/final_sprint3/bg.jpeg);
+                background-image: url(team6/final_sprint3_changed/final_sprint3/bg0.jpeg);
                 font-family: 'Roboto';
             }
 
@@ -35,7 +35,21 @@
                 text-align: center;
                 padding-top: 60px;
                 font-size: 20pt;
+                line-height: 1.7;
             }
+
+            #p1{
+                font-size: 30pt;
+            }
+            #p2{
+                font-size: 20pt;
+            }
+            #p3{
+                font-size: 15pt;
+            }
+
+
+
             .button{ 
                 padding: 28px;
                 background-color: #38b48b;
@@ -45,7 +59,7 @@
                 display: inline-block;
             }
 
-            .button a {
+            a {
                 color: white;
                 text-decoration: none;
             }
