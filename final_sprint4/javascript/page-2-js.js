@@ -143,20 +143,6 @@ firebase.auth().onAuthStateChanged(function(user){
             console.log(user);
         });
 
- //--------------** update user with calculated results ** ---------------------//       
-        document.getElementById("genResult").addEventListener("click",
-        function() {
-            var user = firebase.auth().currentUser;
-            firebase.database().ref("users/"+user.uid).update({
-                "distanceEvo" : 99,
-                "distanceModo" : 99,
-                "costEvo" : 9.9,
-                "costModo" : 9.9
-            })
-            console.log(user);
-        });
-
-
 /*--- getting inputed value from database (departing and arrival) ---*/
 
 

@@ -19,11 +19,12 @@
   };
   firebase.initializeApp(config);
 </script>
+    </head>
 
 <body> 
      <div id="bg">
 
-    <div id="banner">
+         <div id="banner">
         <h1>U-GO</h1>
         <div id="nav-button-container">
                 <button id="btnLogout" class="button">Logout</button>
@@ -34,15 +35,26 @@
        <div id="main-container">
            <br>
            <p id="res-text-1">Here are your results!</p>
-           <p id="res-text-2">Calculations based on distance and time:</p>
+           <p id="res-text-2">Calculations based on price:</p>
+           <div id="modo" class="recommend">
+               <img src="/Users/yuni/Desktop/team6/final_sprint4/modoLogo.png" alt="modologo" id="modoLogo">
+               <p class="company">Modo</p><br>
+               <a href="https://www.modo.coop/" class="link" target="_blank">Go to Website </a>
            <p id="result-container"></p>
+               <p id="modoPrice"></p>
+               
+               </div>
+           <div id="evo" class="recommend">
+               <img src="/Users/yuni/Desktop/team6/final_sprint4/evoLogo.png" alt="evologo" id="evoLogo">
+               <p class="company">Evo</p><br>
+               <a href="https://evo.ca/join?promocode=OMDGOOGLE&gclid=CjwKCAjw-ZvlBRBbEiwANw9UWtgOE2jFFFgrdFQTmVpjR1a0qkI8bnqPkrFG4u_-wtWamgisa26ZARoChWEQAvD_BwE&gclsrc=aw.ds" class="link" target="_blank">Go to Website</a>
            <p id="result-container-2"></p>
-
-       </div>
-       </div>
+               </div>
+           </div>
+                   <button id="carbonResults" class="button"><a href="page-5.html">Carbon emission saving</a></button>
            <div id="footer">
                <p>2019 U-GO INC. &copy; Copyright Team 6. All right reserved.</p>
            </div>
         <script src="javascript/page-4-js.js"></script>
     </body>
-</head>
+    </html>

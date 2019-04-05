@@ -65,16 +65,13 @@ function DisplayList(list){
     var trimCostModo = costModo.toFixed(2);
     console.log("$"+trimCostModo);
     
-    var costModo = dist*rateDistance + time*rateTimeModo;
-    console.log(costModo);
-    var trimCostModo = costModo.toFixed(2);
-    console.log("$"+trimCostModo);
-    
         var paraModo = document .createElement("p");
         document.getElementById('result-container').appendChild(paraModo);
-        var nodeDisModo = document.createTextNode("Distance: " + dist.toFixed(2)+" Km |");
+        var nodeDisModo = document.createTextNode("Distance: " + dist.toFixed(2)+" Km");
         var nodeModo = document.createTextNode("Price: $" + trimCostModo);
+    var br = document.createElement("br");
         paraModo.appendChild(nodeDisModo);
+    paraModo.appendChild(br);
         paraModo.appendChild(nodeModo);
 
 
@@ -106,10 +103,11 @@ function DisplayList(list){
 
         var paraEvo = document .createElement("p");
         document.getElementById('result-container-2').appendChild(paraEvo);
-         var nodeDisEvo = document.createTextNode("All mileage is included with Evo :D |");
+         var nodeDisEvo = document.createTextNode("All mileage is included with Evo :D");
         var nodeEvo = document.createTextNode("Price: $" + trimCostEvo);
-            var nodeModo = document.createTextNode("Price: $" + trimCostModo);
+        var br1 = document.createElement("br");
         paraEvo.appendChild(nodeDisEvo);
+        paraEvo.appendChild(br1);
         paraEvo.appendChild(nodeEvo);
     
 }
