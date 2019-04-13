@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Welcome to U-GO</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css" href="/css/page-1-style.css">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCWP7dexZlcUbIXkojw66QEXJUUGQkC9fo",
+    authDomain: "u-go-transportation-app.firebaseapp.com",
+    databaseURL: "https://u-go-transportation-app.firebaseio.com",
+    projectId: "u-go-transportation-app",
+    storageBucket: "u-go-transportation-app.appspot.com",
+    messagingSenderId: "629277851753"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<body>
+<div id="bg">
+        <div id="banner">
+                <h1>U-GO</h1>
+        </div>
+               <div class="background">
+                   <div id="textBox">
+                   <div id="para">
+                       <p id="p1">Confused by all the car-share options?</p><br>
+                       <p id="p2">Look no further!</p><br>
+                       <p id="p3">Try our handy tool that calculates and compares <br>rates between carshare companies</p>
+                   </div>
+                   <div id='button-container'>
+                   <a class="button" href='/auth.html'>Sign-up to begin</a>
+                   </div>
+                   </div>
+               </div>
+            <div id="footer">
+               <p>2019 U-GO INC. &copy; Copyright Team 6. All right reserved.</p>
+           </div>
+              </div>
+    </body>
+</head>

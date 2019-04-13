@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Questionaire Page</title>
+
+<link rel="stylesheet" type="text/css" href="/css/page-5-style.css">
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCWP7dexZlcUbIXkojw66QEXJUUGQkC9fo",
+    authDomain: "u-go-transportation-app.firebaseapp.com",
+    databaseURL: "https://u-go-transportation-app.firebaseio.com",
+    projectId: "u-go-transportation-app",
+    storageBucket: "u-go-transportation-app.appspot.com",
+    messagingSenderId: "629277851753"
+  };
+  firebase.initializeApp(config);
+</script>
+    </head>
+
+<body> 
+     <div id="bg">
+
+         <div id="banner">
+        <h1>U-GO</h1>
+        <div id="nav-button-container">
+                <button id="btnLogout" class="button">Logout</button>
+              </div>
+       </div>
+         
+         <div id="infotext">
+             <h2>What are carbon emissions and what do they do?</h2>
+             <p>"Carbon Emissions" is a combined measure of carbon dioxide (CO2) and methane (CH4).<br>When CO2 dissolves in the ocean, it acidifies the ocean, <br>weakening the shells of crustaceans at the base of the food chain.</p>
+             <h2>Carshare companies typically use hybrid cars,<br> so how much CO2 do you save by going hybrid?</h2>
+         
+         </div>
+            <div id="result-container"></div>
+           <div id="result-container-2"></div>
+         
+         
+           <div id="footer">
+               <p>2019 U-GO INC. &copy; Copyright Team 6. All right reserved.</p>
+           </div>
+    </div>
+        <script src="/javascript/page-5-js.js"></script>
+    </body>
+    </html>

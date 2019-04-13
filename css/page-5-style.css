@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+             #bg{
+                background-image: url(../image/carbonBg.jpg);
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            
+            *{
+                margin: 0;
+                font-family: 'Dosis';
+                
+            }
+            #banner{
+                height: 100px;
+            }
+
+            h1{
+                float: left;
+                font-family: 'Monoton', cursive;
+                font-size: 45pt;
+                padding: 0px 10px;
+                color: white;
+                
+            }
+
+            #infotext {
+                color: white;
+                text-align: center;
+                font-size: 20px;
+                line-height: 2.5em;
+            }
+
+
+            #result-container {
+                margin: 20px;
+                font-size: 18px;
+            }
+
+
+            #result-container-2 {
+                margin: 20px;
+                font-size: 18px;
+            }
+
+            #button-container, #carbon-button-container {
+                padding-top: 30px;
+                text-align: right;
+                height: 100px;
+            }
+
+            .button { 
+                padding: 20px;
+                background-color: white;
+                margin: 14px 5px;
+                cursor: pointer;
+                font-size: 17px;
+                display: inline-block;
+                border: none;
+            }
+
+            .button a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .button:hover {
+                color: white;
+                background-color: grey;
+            }
+
+            .button:hover a{
+                color: white;
+                background-color: grey;
+                text-decoration: underline;
+            }
+          #btnLogout {
+                float: right;
+            }
+            
+            /* END components in white box */
+            
+            
+            #footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                letter-spacing: 0.2em;
+                color: dimgray;
+                background-color: white;
+                font-size: 10px;
+                padding: 8px;
+            }
+
+            #result-container, #result-container-2{
+                text-align: left;
+                color: white;
+                text-align: center;
+                font-size: 25pt;
+            }
+            h2{
+                font-size:30pt;
+                padding-top: 2em;
+            }
+
+            #result-container p{
+                text-decoration: underline;
+                font-size: 22pt;
+                text-shadow: 5px 5px 10px rgb(0, 255, 0);
+            }
